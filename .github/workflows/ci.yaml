@@ -1,7 +1,7 @@
 name: Developer Continuous Integration
 
 on:
-  pull_request:
+  push:
     branches:
       - main
 

@@ -1,0 +1,36 @@
+name: Developer Continuous Integration
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: CI
+    environment: DEVELOP
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20.x
+
+      - name: Install npm
+        uses: pnpm/action-setup@v2.1.0
+        with:
+          version: 7
+          run_install: false
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build
+        run: tsc
+
+      - name: Run tests
+        run: 'pnpm test:ci'

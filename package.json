@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --test --test-reporter node-test-github-reporter"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "node-test-github-reporter": "^1.1.5",
     "typescript": "^5.2.2"
   },
   "engines": {

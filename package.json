@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "node --test --test-reporter node-test-github-reporter"
   },
@@ -16,6 +17,7 @@
     "node": "20"
   },
   "dependencies": {
-    "@types/node": "^20.8.2"
+    "@types/node": "^20.8.2",
+    "tsx": "^3.13.0"
   }
 }

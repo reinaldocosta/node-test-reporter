@@ -5,11 +5,14 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "node --test --test-reporter spec --test-reporter-destination stdout --test-reporter node-test-github-reporter --test-reporter-destination stdout"
+    "test:js": "node --test --test-reporter spec --test-reporter-destination stdout --test-reporter node-test-github-reporter --test-reporter-destination stdout",
+    "test": "glob -c \"node --loader tsx --no-warnings --test\" \"./tests/**/*.test.ts\""
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/glob": "^8.1.0",
+    "glob": "^10.3.10",
     "node-test-github-reporter": "^1.1.5",
     "typescript": "^5.2.2"
   },

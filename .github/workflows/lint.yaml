@@ -7,6 +7,9 @@ on:
 
 jobs:
   lint:
+    permissions:
+      checks: write
+      contents: write    
     uses: gentrop-cloud/actions_workflows/.github/workflows/lint.yaml@main
     with:
       node_version: '20'

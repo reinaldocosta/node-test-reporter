@@ -20,6 +20,8 @@ This action help us in two great ways:
 
 The idea of this workflow is to show some ways of running our tests. And to have a default, but extensible, workflow to minimize some mistake that could happen.
 Some nice features to showcase here is the hability to generate reports inside the action, and to generate badges after the tests.
-### Reports
-
+### Reports(Success)
+![alt text](report-success.png)
+### Report(Failure)
+![alt text](report-failure.png)
 ### Badges

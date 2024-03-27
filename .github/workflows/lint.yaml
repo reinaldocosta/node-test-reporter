@@ -1,7 +1,7 @@
 name: LintProject
 
 on:
-  pull_request:
+  push:
     branches:
       - main
 

@@ -10,5 +10,3 @@ jobs:
     uses: gentrop-cloud/actions_workflows/.github/workflows/lint.yaml@main
     with:
       node_version: '20'
-    secrets: 
-      GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}

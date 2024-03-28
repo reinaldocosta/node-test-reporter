@@ -9,6 +9,7 @@ jobs:
   deploy:
     permissions:
       id-token: write	
+      contents: read
     uses: gentrop-cloud/actions_workflows/.github/workflows/deploy.yaml@main
     with:
       identity_pool: 'projects/195139564832/locations/global/workloadIdentityPools/my-pool/providers/my-provider'

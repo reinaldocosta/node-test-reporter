@@ -1,7 +1,7 @@
 name: TestProject
 
 on:
-  push:
+  pull_request:
     branches:
       - main
 

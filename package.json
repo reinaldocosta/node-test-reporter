@@ -5,6 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "build": "npx tsc",
+    "start": "node --env-file=.env dist/index.js",
+    "hotreload": "node --watch --import=tsx --env-file=.env ./index.ts",
     "test": "node --test --test-reporter spec --test-reporter-destination stdout --test-reporter node-test-github-reporter --test-reporter-destination stdout",
     "test:ts": "glob -c \"node --loader tsx --test  --test-reporter spec --test-reporter-destination stdout --test-reporter node-test-github-reporter --test-reporter-destination stdout   \" \"./tests/**/*.test.ts\""
   },

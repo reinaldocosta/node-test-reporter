@@ -1,6 +1,6 @@
 import { createServer } from 'node:http'
 
-// const unused = 'It will generate an PR annotation'
+const unused = 'It will generate an PR annotation'
 const host = 'localhost'
 const port = 8080
 

@@ -12,6 +12,6 @@ jobs:
       contents: read
     uses: gentrop-cloud/actions_workflows/.github/workflows/deploy.yaml@main
     with:
-      identity_pool: 'projects/195139564832/locations/global/workloadIdentityPools/my-pool/providers/my-provider'
-      identity_sa: 'action-deployer@gtp-reinaldo-study-0001.iam.gserviceaccount.com'
+      identity_pool: 'projects/195139564832/locations/global/workloadIdentityPools/github-pool/providers/github-wif'
+      identity_sa: 'github-action-deployer@gtp-reinaldo-study-0001.iam.gserviceaccount.com'
       image: 'us-central1-docker.pkg.dev/gtp-reinaldo-study-0001/default-repo/sample:tag1'

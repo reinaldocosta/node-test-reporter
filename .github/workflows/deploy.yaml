@@ -15,3 +15,5 @@ jobs:
       identity_pool: 'projects/195139564832/locations/global/workloadIdentityPools/github-pool/providers/github-wif'
       identity_sa: 'github-action-deployer@gtp-reinaldo-study-0001.iam.gserviceaccount.com'
       image: 'us-central1-docker.pkg.dev/gtp-reinaldo-study-0001/default-repo/sample:tag1'
+      name: 'node-test-reporter'
+      region: 'us-central1'
